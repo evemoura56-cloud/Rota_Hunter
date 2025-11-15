@@ -1,0 +1,29 @@
+﻿.table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid rgba(255, 46, 76, 0.3);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: rgba(255, 46, 76, 0.12);
+}
+
+.table th,
+.table td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.rank {
+  font-weight: 700;
+  color: var(--verm-neon);
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 46, 76, 0.3);
+}

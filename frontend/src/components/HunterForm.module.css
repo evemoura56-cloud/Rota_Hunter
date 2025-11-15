@@ -1,0 +1,48 @@
+﻿.formCard {
+  background: rgba(25, 27, 29, 0.85);
+  padding: 24px;
+  border-radius: 20px;
+  border: var(--borda);
+  display: grid;
+  gap: 18px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.field input,
+.field textarea {
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--branco);
+}
+
+.field textarea {
+  min-height: 80px;
+}
+
+.button {
+  justify-self: flex-start;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(120deg, rgba(255, 46, 76, 0.8), rgba(255, 46, 76, 1));
+  color: var(--branco);
+  letter-spacing: 0.08em;
+}

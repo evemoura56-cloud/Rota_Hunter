@@ -1,0 +1,39 @@
+﻿.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formQuick {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  background: rgba(25, 27, 29, 0.8);
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.formQuick input {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--branco);
+}
+
+.formQuick button {
+  grid-column: span 2;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(120deg, var(--verm-escuro), var(--verm-neon));
+  color: var(--branco);
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .formQuick button {
+    grid-column: span 1;
+  }
+}

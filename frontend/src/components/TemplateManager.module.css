@@ -1,0 +1,60 @@
+﻿.manager {
+  display: grid;
+  gap: 16px;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+}
+
+.template {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 46, 76, 0.25);
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.editor {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(25, 27, 29, 0.8);
+  border: 1px solid rgba(255, 46, 76, 0.3);
+}
+
+.editor textarea {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--branco);
+  padding: 12px;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.actions button {
+  flex: 1;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(120deg, var(--verm-escuro), var(--verm-neon));
+  color: var(--branco);
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--cinza-claro);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

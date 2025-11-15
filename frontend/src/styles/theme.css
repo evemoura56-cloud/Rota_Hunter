@@ -1,0 +1,47 @@
+﻿:root {
+  --verm-escuro: #b3122c;
+  --verm-neon: #ff2e4c;
+  --branco: #ffffff;
+  --cinza-claro: #e6e6e6;
+  --grafite: #191b1d;
+  --preto-tech: #0d0d0d;
+  --fonte-titulo: "Montserrat", sans-serif;
+  --fonte-texto: "Inter", sans-serif;
+  --borda: 1px solid rgba(255, 46, 76, 0.24);
+  --card-grad: linear-gradient(145deg, rgba(179, 18, 44, 0.25), rgba(13, 13, 13, 0.8));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  background: radial-gradient(circle at top, #1a1c20, var(--preto-tech));
+  color: var(--branco);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--verm-escuro);
+  border-radius: 4px;
+}

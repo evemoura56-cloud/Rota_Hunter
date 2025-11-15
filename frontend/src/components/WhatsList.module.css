@@ -1,0 +1,32 @@
+﻿.list {
+  display: grid;
+  gap: 14px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 46, 76, 0.3);
+  background: rgba(19, 19, 19, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card h4 {
+  margin: 0 0 4px;
+}
+
+.card small {
+  color: var(--cinza-claro);
+}
+
+.button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: linear-gradient(120deg, var(--verm-escuro), var(--verm-neon));
+  color: var(--branco);
+  cursor: pointer;
+  font-size: 0.85rem;
+}

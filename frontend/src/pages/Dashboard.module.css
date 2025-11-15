@@ -1,0 +1,29 @@
+﻿.wrapper {
+  display: grid;
+  gap: 24px;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.sectionBox {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.timeline {
+  display: flex;
+  gap: 12px;
+}
+
+.timelineItem {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 46, 76, 0.25);
+}

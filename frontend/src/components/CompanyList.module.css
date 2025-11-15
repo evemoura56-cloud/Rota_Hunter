@@ -1,0 +1,32 @@
+﻿.list {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company {
+  font-size: 1.05rem;
+  font-family: var(--fonte-titulo);
+}
+
+.details {
+  color: var(--cinza-claro);
+  font-size: 0.85rem;
+}
+
+.tag {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 46, 76, 0.5);
+  border-radius: 999px;
+  color: var(--verm-neon);
+}
