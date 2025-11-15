@@ -1,6 +1,7 @@
+import { lazy, Suspense } from "react";
 ﻿import styles from "./Dashboard.module.css";
 import { KpiCard } from "../components/KpiCard";
-import { ChartSection } from "../components/ChartSection";
+const ChartSection = lazy(() => import("../components/ChartSection"));
 
 export const Dashboard = ({ kpis, charts }) => (
   <div className={styles.wrapper}>
@@ -9,7 +10,9 @@ export const Dashboard = ({ kpis, charts }) => (
         <KpiCard key={kpi.label} label={kpi.label} value={kpi.value} tag={kpi.tag} />
       ))}
     </div>
-    <ChartSection pizza={charts.pizza} barras={charts.barras} linha={charts.linha} />
+    <Suspense fallback={<div>Carregando gráficos...</div>}>
+      <ChartSection pizza={charts.pizza} barras={charts.barras} linha={charts.linha} />
+    </Suspense>
     <div className={styles.sectionBox}>
       <h3 style={{ marginTop: 0 }}>Velocidade do Funil</h3>
       <div className={styles.timeline}>

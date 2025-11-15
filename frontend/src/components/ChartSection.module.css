@@ -1,4 +1,4 @@
-﻿.section {
+.section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
@@ -16,4 +16,23 @@
   margin: 0 0 12px;
   font-family: var(--fonte-titulo);
   font-size: 1rem;
+}
+
+.pieAlternative {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.pieItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pieColor {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
 }
