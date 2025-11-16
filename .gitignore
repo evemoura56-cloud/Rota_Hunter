@@ -1,0 +1,55 @@
+# Environment & secrets
+.env
+.env.*
+.env.local
+.DS_Store
+Thumbs.db
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Databases & models
+backend/database/*.db
+backend/database/*.sqlite
+backend/database/*.pkl
+
+# Frontend / Node
+node_modules/
+frontend/node_modules/
+frontend/.vite/
+frontend/dist/
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Playwright
+playwright-report/
+playwright/.cache/
+test-results/
+
+# Tooling & IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Temporary research artifacts
+bing*.html
+duck.html
+gh.html
+gemini_cli_readme.md
+parse.py
