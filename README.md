@@ -86,14 +86,27 @@ docker-compose.yml
 
 ### Backend (FastAPI)
 
+> Todos os comandos abaixo devem ser executados **a partir da raiz do repositório** para que o pacote `backend` seja encontrado corretamente.
+
 ```bash
-cd backend
-pip install -r requirements.txt
-uvicorn app:app --reload
+# 1) Ambientes isolados evitam conflitos entre projetos
+python -m venv .venv
+.\.venv\Scripts\activate   # Windows
+# source .venv/bin/activate  # macOS/Linux
+
+# 2) Dependências e Playwright (robôs do Hunter)
+pip install -r backend/requirements.txt
+python -m playwright install
+
+# 3) Suba o servidor apontando direto para backend.app
+python -m uvicorn backend.app:app --reload
+# ou simplesmente
+python run_app.py
 ```
 
 - API: `http://localhost:8000`
 - Documentação: `http://localhost:8000/docs` (Swagger) e `http://localhost:8000/redoc`
+- Se preferir Postgres/Docker, ajuste `DATABASE_URL` ou use `docker compose up --build`
 
 ### Frontend (Vite + React)
 
