@@ -119,6 +119,8 @@ npm run dev
 - Interface disponível em `http://localhost:5173`
 - Crie `frontend/.env` caso precise sobrescrever `VITE_API_URL`
 
+> Dica: o script `npm run dev` executa `kill-port 5173 5174 5175` antes de subir o Vite, garantindo que nenhuma instância antiga do Node fique segurando essas portas. Caso prefira limpar manualmente, use `Get-NetTCPConnection -LocalPort 5173` seguido de `Stop-Process -Id <PID>` no PowerShell antes de iniciar.
+
 ### Docker Compose
 
 ```bash
