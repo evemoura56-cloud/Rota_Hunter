@@ -14,9 +14,8 @@ services:
     image: python:3.11
     working_dir: /app
     volumes:
-      - ./backend:/app
-      - ./backend/database:/app/database
-    command: bash -c "pip install -r requirements.txt && uvicorn app:app --host 0.0.0.0 --port 8000"
+      - ./backend:/app/backend
+    command: bash -c "pip install -r backend/requirements.txt && PYTHONPATH=/app uvicorn backend.app:app --host 0.0.0.0 --port 8000"
     environment:
       DATABASE_URL: postgresql+psycopg2://rota:hunter@database:5432/rota_hunter
       JWT_SECRET: super-secreto
@@ -30,6 +29,7 @@ services:
     working_dir: /web
     volumes:
       - ./frontend:/web
+      - /web/node_modules
     command: bash -c "npm install && npm run dev -- --host 0.0.0.0"
     ports:
       - "5173:5173"

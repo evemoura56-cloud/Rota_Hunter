@@ -141,3 +141,7 @@ def velocidade_funil(db: Session) -> float:
         for lead in primeiros
     ]
     return sum(tempos) / len(tempos)
+
+
+def get_lead_by_url(db: Session, site_url: str) -> Lead | None:
+    return db.query(Lead).filter(Lead.site_url == site_url).first()
