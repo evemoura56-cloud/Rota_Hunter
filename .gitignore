@@ -53,3 +53,5 @@ duck.html
 gh.html
 gemini_cli_readme.md
 parse.py
+*.html
+*.json
